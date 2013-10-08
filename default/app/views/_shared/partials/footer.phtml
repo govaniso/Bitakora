@@ -1,0 +1,13 @@
+<footer class="footer">
+    <div class="container padded">
+        <div class="green callout">
+            <div class="row">
+                <div class="three fourths padded">
+                    <p>     <?php echo 'Tiempo: ' . round((microtime(1) - START_TIME), 4) . ' seg.';
+echo ', Memoria Usada: ' . number_format(memory_get_usage() / 1048576, 2) . ' MB'; ?>
+                        <i class="icon-envelope-alt"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

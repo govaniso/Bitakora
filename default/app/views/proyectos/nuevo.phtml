@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="one whole padded">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Agregar proyecto</legend>
+                <div class="row">
+                    <div class="one whole padded">
+                        <label for="name">Nombre del proyecto:</label>
+                        <input id="name" type="text" placeholder="First &amp; Last Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one half padded">
+                        <input type="text" placeholder="Url del proyecto">
+                    </div>
+                    <div class="one fourth padded"><span class="select-wrap">
+                            <?php
+                            echo Form::dbSelect("complejidad", "complejidad", array("Complejidad", "find"), null);
+                            ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one whole padded">
+                        <label for="message">Descripción:</label>
+                        <textarea id="message" placeholder="Enter your message..."></textarea>
+                    </div>
+                </div>
+                
+            </fieldset>
+        </form>
+        
+    </div>
+</div>

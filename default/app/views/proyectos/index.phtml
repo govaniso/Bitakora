@@ -1,0 +1,20 @@
+<?php echo View::content(); ?>
+<h1>Proyectos trabajando ...</h1>
+<a href="<?php echo URL_DOMAIN,  Router::get("controller"),"/nuevo" ?>" class="small button">Agregar</a>
+<hr>
+<table>
+    <thead>        
+        <tr>
+            <th>Proyecto</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($proyectos as $p) { ?>
+            <tr>
+                <td><?php echo $p->proyecto ?></td>
+                <td></td>
+            </tr>
+        <?php } ?>
+    </tbody>
+</table>
